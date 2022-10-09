@@ -1,14 +1,15 @@
-from asyncio import windows_events
-from multiprocessing import connection
 import socket
 import threading
 from tkinter import *
 
 def message_send():
-   # while True:
         message = Socket_chat.get("0.0", END)
         Socket_chat.delete("0.0", END)
-        sock.send(message.encode())
+        try:
+            sock.send(message.encode())
+        except:
+            Socket_notif.delete("0.0", END)
+            Socket_notif.insert(END, "Connect First")
 def message_recv(sock):
     while True:
         message = ""
@@ -33,7 +34,11 @@ def make_conn():
     global sock
     global connection
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.connect((data[0],int(data[1])))
+    try:
+        sock.connect((data[0],int(data[1])))
+    except Exception as E:
+        Socket_notif.delete("0.0", END)
+        Socket_notif.insert(END, "Invalid IP or Port Reenter!")
     connection = True
     message = ""
     while message == "":
@@ -41,6 +46,13 @@ def make_conn():
     print('Received from server: ' + message)
     
     t2 = threading.Thread(target=message_recv, args=(sock,)).start()      
+
+
+def destroy_window():
+    if sock:
+        sock.close()
+    window.destroy()
+    exit()
 
 window=Tk()
 Socket_lable=Label(window,text="Enter IP Address & Port Number:")
@@ -57,12 +69,13 @@ Socket_recv_lable=Label(window,text="Recieved Message:")
 Socket_recv_lable.place(x=10,y=220)
 Socket_output=Text(window,height=5, width=53, bg="gray")
 Socket_output.place(x=10,y=240)
-Socket_notif=Text(window, height=1.25, width=14, bg="Yellow", font =("Courier", 12), padx=13, pady=10)
+Socket_notif=Text(window, height=1.25, width=30, bg="Yellow", font =("Courier", 8), padx=2, pady=10)
 Socket_notif.insert(END, "Not Connected")
-Socket_notif.place(x=250,y=30)
+Socket_notif.place(x=220,y=30)
 
 Socket_button=Button(window,text="Connect",command=make_conn)
 Socket_button.place(x=150,y=30)
 window.title('Socket Assignment - Client')
 window.geometry("450x400+10+20")
+window.protocol("WM_DELETE_WINDOW", destroy_window ) 
 window.mainloop()
