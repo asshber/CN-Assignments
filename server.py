@@ -73,8 +73,6 @@ def destroy_window():
         window.destroy()
         os.kill(os.getpid(), signal.SIGINT)
 
-connection = False
-
 global window
 connection=False
 window=Tk()
