@@ -1,6 +1,10 @@
 import socket
+import os
+import signal
 import threading
 from tkinter import *
+import time
+
 
 
 def message_send():
@@ -22,16 +26,23 @@ def message_recv():
         else:
             Socket_notif.delete("0.0", END)
             Socket_notif.insert(END, "Not Connected")
-        data = conn.recv(1024).decode()
+        try:
+            data = conn.recv(1024).decode()
+        except:
+            Socket_notif.delete("0.0", END)
+            Socket_notif.insert(END, "Connection Lost")
+            time.sleep(10)
+            exit()
         Socket_output.delete("0.0", END)
         Socket_output.insert(END,data)
         print(data)    
-        #conn.close()
 
 def start_service():
     port = Socket_data.get()
     port=int(port)
     host = "127.0.0.1"
+    Socket_notif.delete("0.0", END)
+    Socket_notif.insert(END, "Listening")
     global sock
     sock = socket.socket()
     if (sock != -1):
@@ -48,22 +59,24 @@ def start_service():
 
     print(f"Listening as {host}:{port}")
     global connection
-    while connection == False:
-        global conn
-        conn, addr = sock.accept()
-        if addr:
-            print("Connected by: ", addr)
-            conn.send(("Connection estabilished!").encode())
-            connection = True
+    global conn
+    conn, addr = sock.accept()
+    if addr:
+        print("Connected by: ", addr)
+        conn.send(("Connection estabilished!").encode())
+        connection = True
     t2 = threading.Thread(target=message_recv, args=()).start()
 
 def destroy_window():
-    if conn:
-        conn.close()
-    window.destroy()
-    exit()
+        if (connection):
+            sock.close()
+        window.destroy()
+        os.kill(os.getpid(), signal.SIGINT)
 
 connection = False
+
+global window
+connection=False
 window=Tk()
 Socket_lable=Label(window,text="Enter Port Number:")
 Socket_lable.place(x=10,y=10)
@@ -87,5 +100,5 @@ Socket_button=Button(window,text="Start Listening",command=start_service)
 Socket_button.place(x=150,y=30)
 window.title('Socket Assignment - Server')
 window.geometry("450x400+10+20")
+window.protocol("WM_DELETE_WINDOW", destroy_window ) 
 window.mainloop()
-window.protocol("WM_DELETE_WINDOW",destroy_window)

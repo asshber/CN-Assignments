@@ -1,5 +1,8 @@
+import os
 import socket
 import threading
+import signal
+import time
 from tkinter import *
 
 def message_send():
@@ -11,7 +14,6 @@ def message_send():
             Socket_notif.delete("0.0", END)
             Socket_notif.insert(END, "Connect First")
 def message_recv(sock):
-    while True:
         message = ""
         while message.lower().strip() != 'bye':
             global connection
@@ -21,11 +23,16 @@ def message_recv(sock):
             else:
                 Socket_notif.delete("0.0", END)
                 Socket_notif.insert(END, "Not Connected")
-            message = sock.recv(1024).decode()
+            try:
+                message = sock.recv(1024).decode()
+            except:
+                Socket_notif.delete("0.0", END)
+                Socket_notif.insert(END, "Connection Lost")
+                time.sleep(10)
+                exit()
             Socket_output.delete("0.0", END)
             Socket_output.insert(END,message)
             print("Server: ", message)
-        #sock.close()
 
 
 def make_conn():
@@ -49,14 +56,16 @@ def make_conn():
 
 
 def destroy_window():
-    if sock:
+    if (connection):
         sock.close()
     window.destroy()
-    exit()
+    os.kill(os.getpid(), signal.SIGINT)
 
+global window
 window=Tk()
 Socket_lable=Label(window,text="Enter IP Address & Port Number:")
 Socket_lable.place(x=10,y=10)
+connection=False
 Socket_data=Entry(window,text="",bd=5)
 Socket_data.place(x=10,y=30)
 Socket_send_lable=Label(window,text="Type here to send Message:")
