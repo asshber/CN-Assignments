@@ -16,36 +16,36 @@ def initialize_proxy():
     p_socket.listen(max_connections)
     print("Listening...")
 
-    conn, addr = p_socket.accept()
-    print("Connection Request from: " + str(addr[0]) + ", port: " + str(addr[1]))
-    req = conn.recv(BUFFER_SIZE)
-    print(req)
-    arr=req.split(b'\n')
-    #print(arr)
-    for i in range(0,len(arr)-2):
-        if (i==0):
-            method_url=arr[i].split(b' ')
-            print(method_url)
-            method=method_url[0]
-            index = method_url[1].find(b"://")
-            if(index != -1):
-                url = method_url[(index+3)]
-            else:
-                url = method_url[1]
-            print(url)
-            port_url = url.split(b':')[1]
-            print(port_url)
-            file_index = url.find(b'/')
-            if(file_index == -1):
-                file_index = len(url)
-
-            # url=url_req[1]
-            # host_part=url.split(b'/')
-            # file_part=host_part[1]
-            # host_part=host_part[0]
-            print(method)
-            # print(host_part)
-            # print(file_part)
+    while True:
+        conn, addr = p_socket.accept()
+        print("Connection Request from: " + str(addr[0]) + ", port: " + str(addr[1]))
+        #New fun will be from here threading will also be applied when calling
+        req = conn.recv(BUFFER_SIZE)
+        #print(req)
+        arr=req.split(b'\n')
+        #print(arr)
+        for i in range(0,len(arr)-2):
+            if (i==0):
+                method_url=arr[i].split(b' ')
+                method=method_url[0]
+                url=method_url[1].split(b'://')
+                #print(url)
+                url_str=url[0]
+                if url_str == b'http':
+                    url_str=url[1]
+                if b':' in url_str:
+                    req_port=url_str.split(b':')
+                    url_str=req_port[0]
+                    req_port=req_port[1]
+                else:
+                    if(method==b'GET'):
+                        req_port=80
+                    elif(method==b'CONNECT'):
+                        req_port=443
+                print(method)
+                print(url_str)
+                print(req_port)
+            
 
     
 
