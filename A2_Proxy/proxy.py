@@ -51,8 +51,27 @@ def initialize_proxy():
             
 def proxy(webserver, port, conn, req):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    filename=webserver
+    webserver=webserver.split(b'/')
+    webserver=webserver[0]
+    os.chdir('/home/asshber/CN-Assignments/A2_Proxy/cache')
     sock.connect((webserver, int(port)))
-    sock.send(req)
+    filename=str(filename)
+    filename=filename.replace('/','')
+    #print("Done")
+    if filename in os.listdir('.'):
+        print("Cache HIT")
+        with open(filename,'rb') as f:
+            buff=f.read().decode()
+        conn.send(buff.encode())
+    else:
+        print("Cache MISS")
+        sock.send(req)
+        buff=sock.recv(BUFFER_SIZE).decode()
+        with open(filename,'wb') as f:
+            f.write(buff.encode())
+        conn.send(buff.encode())
+
 
     
 
