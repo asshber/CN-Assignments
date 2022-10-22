@@ -54,7 +54,7 @@ def proxy(webserver, port, conn, req):
     filename=webserver
     webserver=webserver.split(b'/')
     webserver=webserver[0]
-    os.chdir('/home/asshber/CN-Assignments/A2_Proxy/cache')
+    os.chdir('C:/Users/hp/CN-Assignments/A2_Proxy/cache')
     sock.connect((webserver, int(port)))
     filename=str(filename)
     filename=filename.replace('/','')
@@ -68,6 +68,7 @@ def proxy(webserver, port, conn, req):
         print("Cache MISS")
         sock.send(req)
         buff=sock.recv(BUFFER_SIZE).decode()
+        print(buff)
         with open(filename,'wb') as f:
             f.write(buff.encode())
         conn.send(buff.encode())
