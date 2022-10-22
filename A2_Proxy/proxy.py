@@ -39,13 +39,20 @@ def initialize_proxy():
                     req_port=req_port[1]
                 else:
                     if(method==b'GET'):
-                        req_port=80
-                    elif(method==b'CONNECT'):
+                        # print(url_str)
+                        # http_proxy(url_str, 80, conn, req)
+                        req_port = 80
+                    elif(method == b'CONNECT'):
                         req_port=443
                 print(method)
                 print(url_str)
                 print(req_port)
+                proxy(url_str, req_port, conn, req)
             
+def proxy(webserver, port, conn, req):
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.connect((webserver, int(port)))
+    sock.send(req)
 
     
 
