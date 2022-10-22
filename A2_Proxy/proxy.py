@@ -25,16 +25,29 @@ def initialize_proxy():
     for i in range(0,len(arr)-2):
         if (i==0):
             method_url=arr[i].split(b' ')
+            print(method_url)
             method=method_url[0]
-            
-            url=method_url[1].split(b'://')
-            url=url[1]
-            host_part=url.split(b'/')
-            file_part=host_part[1]
-            host_part=host_part[0]
+            index = method_url[1].find(b"://")
+            if(index != -1):
+                url = method_url[(index+3)]
+            else:
+                url = method_url[1]
+            print(url)
+            port_url = url.split(b':')[1]
+            print(port_url)
+            file_index = url.find(b'/')
+            if(file_index == -1):
+                file_index = len(url)
+
+            # url=url_req[1]
+            # host_part=url.split(b'/')
+            # file_part=host_part[1]
+            # host_part=host_part[0]
             print(method)
-            print(host_part)
-            print(file_part)
+            # print(host_part)
+            # print(file_part)
+
+    
 
 if __name__== "__main__":
     parser=argparse.ArgumentParser(description='Provide a port for proxy server')
