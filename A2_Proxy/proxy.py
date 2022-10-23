@@ -116,7 +116,7 @@ def proxy(webserver, port, conn, req):
     filename=webserver
     webserver=webserver.split(b'/')
     webserver=webserver[0]
-    os.chdir('/home/asshber/CN-Assignments/A2_Proxy/cache')
+    os.chdir(r'C:\Users\hp\CN-Assignments\A2_Proxy\cache')
     sock.connect((webserver, int(port)))
     filename=str(filename)
     filename=filename.replace('/','')
