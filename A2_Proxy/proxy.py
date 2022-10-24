@@ -52,6 +52,7 @@ def https_proxy(webserver, port, conn, req):
     filename=webserver
     webserver=webserver.split(b'/')
     webserver=webserver[0]
+    webserver=str(webserver,'utf-8')
     os.chdir('/home/asshber/CN-Assignments/A2_Proxy/cache')
     s.connect((webserver, int(port)))
     #Connect ka reply bhejna hy yaha client ko
