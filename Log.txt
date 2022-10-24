@@ -1,0 +1,404 @@
+[2022-10-25 00:14:14] --------------------------      NEW SESSION     --------------------------------------
+[2022-10-25 00:14:27] facebook.com added to blocklist
+[2022-10-25 00:15:46] facebook.com deleted from the blocklist
+[2022-10-25 00:18:24] Client connected with address : ('127.0.0.1', 56041)
+[2022-10-25 00:18:24] Connected to HTTPS Server : ssl.gstatic.com
+[2022-10-25 00:18:24] Client connected with address : ('127.0.0.1', 56043)
+[2022-10-25 00:18:24] Connected to HTTPS Server : ssl.gstatic.com
+[2022-10-25 00:18:27] Client connected with address : ('127.0.0.1', 56050)
+[2022-10-25 00:18:27] Connected to HTTPS Server : signaler-pa.clients6.google.com
+[2022-10-25 00:18:27] Client connected with address : ('127.0.0.1', 56052)
+[2022-10-25 00:18:27] Connected to HTTPS Server : signaler-pa.clients6.google.com
+[2022-10-25 00:18:27] Client connected with address : ('127.0.0.1', 56056)
+[2022-10-25 00:18:27] Connected to HTTPS Server : signaler-pa.clients6.google.com
+[2022-10-25 00:18:28] Client connected with address : ('127.0.0.1', 56058)
+[2022-10-25 00:18:28] Connected to HTTPS Server : signaler-pa.clients6.google.com
+[2022-10-25 00:19:17] Client connected with address : ('127.0.0.1', 56075)
+[2022-10-25 00:19:17] Connected to HTTPS Server : www.facebook.com
+[2022-10-25 00:19:17] Client connected with address : ('127.0.0.1', 56077)
+[2022-10-25 00:19:17] Connected to HTTPS Server : www.facebook.com
+[2022-10-25 00:19:18] Client connected with address : ('127.0.0.1', 56081)
+[2022-10-25 00:19:18] Connected to HTTPS Server : api.github.com
+[2022-10-25 00:19:18] Client connected with address : ('127.0.0.1', 56083)
+[2022-10-25 00:19:19] Connected to HTTPS Server : api.github.com
+[2022-10-25 00:19:19] Client connected with address : ('127.0.0.1', 56087)
+[2022-10-25 00:19:19] Connected to HTTPS Server : scontent.fkhi22-1.fna.fbcdn.net
+[2022-10-25 00:19:20] Client connected with address : ('127.0.0.1', 56095)
+[2022-10-25 00:19:20] Connected to HTTPS Server : static.xx.fbcdn.net
+[2022-10-25 00:19:28] Client connected with address : ('127.0.0.1', 56102)
+[2022-10-25 00:19:28] Connected to HTTPS Server : static.xx.fbcdn.net
+[2022-10-25 00:19:28] Client connected with address : ('127.0.0.1', 56106)
+[2022-10-25 00:19:28] Connected to HTTPS Server : scontent.xx.fbcdn.net
+[2022-10-25 00:19:28] Client connected with address : ('127.0.0.1', 56109)
+[2022-10-25 00:19:28] Connected to HTTPS Server : clients4.google.com
+[2022-10-25 00:19:28] Client connected with address : ('127.0.0.1', 56112)
+[2022-10-25 00:19:28] Connected to HTTPS Server : clients4.google.com
+[2022-10-25 00:19:29] Client connected with address : ('127.0.0.1', 56115)
+[2022-10-25 00:19:29] Connected to HTTPS Server : gateway.facebook.com
+[2022-10-25 00:19:29] Client connected with address : ('127.0.0.1', 56117)
+[2022-10-25 00:19:29] Connected to HTTPS Server : gateway.facebook.com
+[2022-10-25 00:19:33] Client connected with address : ('127.0.0.1', 56122)
+[2022-10-25 00:19:33] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:19:33] Client connected with address : ('127.0.0.1', 56124)
+[2022-10-25 00:19:33] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:19:33] Client connected with address : ('127.0.0.1', 56126)
+[2022-10-25 00:19:33] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:19:34] Client connected with address : ('127.0.0.1', 56130)
+[2022-10-25 00:19:34] Connected to HTTPS Server : googleads.g.doubleclick.net
+[2022-10-25 00:19:35] Client connected with address : ('127.0.0.1', 56133)
+[2022-10-25 00:19:35] Connected to HTTPS Server : googleads.g.doubleclick.net
+[2022-10-25 00:19:35] Client connected with address : ('127.0.0.1', 56137)
+[2022-10-25 00:19:35] Client connected with address : ('127.0.0.1', 56139)
+[2022-10-25 00:19:35] Client connected with address : ('127.0.0.1', 56140)
+[2022-10-25 00:19:42] Client connected with address : ('127.0.0.1', 56143)
+[2022-10-25 00:19:42] Client connected with address : ('127.0.0.1', 56144)
+[2022-10-25 00:19:42] Connected to HTTPS Server : github.com
+[2022-10-25 00:19:42] Connected to HTTPS Server : github.githubassets.com
+[2022-10-25 00:19:43] Client connected with address : ('127.0.0.1', 56149)
+[2022-10-25 00:19:43] Client connected with address : ('127.0.0.1', 56150)
+[2022-10-25 00:19:43] Connected to HTTPS Server : github.githubassets.com
+[2022-10-25 00:19:43] Connected to HTTPS Server : avatars.githubusercontent.com
+[2022-10-25 00:19:43] Client connected with address : ('127.0.0.1', 56156)
+[2022-10-25 00:19:43] Connected to HTTPS Server : collector.github.com
+[2022-10-25 00:19:43] Client connected with address : ('127.0.0.1', 56158)
+[2022-10-25 00:19:44] Connected to HTTPS Server : collector.github.com
+[2022-10-25 00:20:03] google.com added to blocklist
+[2022-10-25 00:20:19] Client connected with address : ('127.0.0.1', 56169)
+[2022-10-25 00:20:19] Client connected with address : ('127.0.0.1', 56173)
+[2022-10-25 00:20:19] Client connected with address : ('127.0.0.1', 56177)
+[2022-10-25 00:20:19] Client connected with address : ('127.0.0.1', 56178)
+[2022-10-25 00:20:19] Client connected with address : ('127.0.0.1', 56179)
+[2022-10-25 00:20:19] Client connected with address : ('127.0.0.1', 56180)
+[2022-10-25 00:20:19] Client connected with address : ('127.0.0.1', 56181)
+[2022-10-25 00:20:19] Client connected with address : ('127.0.0.1', 56182)
+[2022-10-25 00:20:19] Connected to HTTPS Server : www.gstatic.com
+[2022-10-25 00:20:20] Client connected with address : ('127.0.0.1', 56185)
+[2022-10-25 00:20:24] Client connected with address : ('127.0.0.1', 56187)
+[2022-10-25 00:20:30] Client connected with address : ('127.0.0.1', 56189)
+[2022-10-25 00:20:35] Client connected with address : ('127.0.0.1', 56191)
+[2022-10-25 00:20:44] google.com deleted from the blocklist
+[2022-10-25 00:20:46] Client connected with address : ('127.0.0.1', 56193)
+[2022-10-25 00:20:48] Client connected with address : ('127.0.0.1', 56197)
+[2022-10-25 00:20:48] Client connected with address : ('127.0.0.1', 56198)
+[2022-10-25 00:20:48] Client connected with address : ('127.0.0.1', 56200)
+[2022-10-25 00:20:48] Client connected with address : ('127.0.0.1', 56203)
+[2022-10-25 00:20:48] Client connected with address : ('127.0.0.1', 56205)
+[2022-10-25 00:20:48] Client connected with address : ('127.0.0.1', 56207)
+[2022-10-25 00:20:48] Client connected with address : ('127.0.0.1', 56208)
+[2022-10-25 00:20:49] Client connected with address : ('127.0.0.1', 56211)
+[2022-10-25 00:20:49] Client connected with address : ('127.0.0.1', 56213)
+[2022-10-25 00:20:49] Client connected with address : ('127.0.0.1', 56214)
+[2022-10-25 00:20:49] Client connected with address : ('127.0.0.1', 56215)
+[2022-10-25 00:20:52] Client connected with address : ('127.0.0.1', 56217)
+[2022-10-25 00:20:57] Client connected with address : ('127.0.0.1', 56219)
+[2022-10-25 00:20:59] Client connected with address : ('127.0.0.1', 56221)
+[2022-10-25 00:21:20] Client connected with address : ('127.0.0.1', 56224)
+[2022-10-25 00:21:20] Client connected with address : ('127.0.0.1', 56225)
+[2022-10-25 00:21:20] Connected to HTTPS Server : www.gstatic.com
+[2022-10-25 00:21:22] Client connected with address : ('127.0.0.1', 56228)
+[2022-10-25 00:21:23] Client connected with address : ('127.0.0.1', 56232)
+[2022-10-25 00:21:23] Client connected with address : ('127.0.0.1', 56233)
+[2022-10-25 00:21:23] Client connected with address : ('127.0.0.1', 56234)
+[2022-10-25 00:21:23] Client connected with address : ('127.0.0.1', 56238)
+[2022-10-25 00:21:23] Client connected with address : ('127.0.0.1', 56240)
+[2022-10-25 00:21:23] Client connected with address : ('127.0.0.1', 56242)
+[2022-10-25 00:21:23] Client connected with address : ('127.0.0.1', 56244)
+[2022-10-25 00:21:24] Client connected with address : ('127.0.0.1', 56246)
+[2022-10-25 00:21:24] Client connected with address : ('127.0.0.1', 56247)
+[2022-10-25 00:21:24] Client connected with address : ('127.0.0.1', 56251)
+[2022-10-25 00:21:24] Client connected with address : ('127.0.0.1', 56254)
+[2022-10-25 00:21:24] Client connected with address : ('127.0.0.1', 56255)
+[2022-10-25 00:21:24] Client connected with address : ('127.0.0.1', 56256)
+[2022-10-25 00:21:24] Connected to HTTPS Server : optimizationguide-pa.googleapis.com
+[2022-10-25 00:21:24] Client connected with address : ('127.0.0.1', 56260)
+[2022-10-25 00:21:24] Client connected with address : ('127.0.0.1', 56261)
+[2022-10-25 00:21:24] Connected to HTTPS Server : optimizationguide-pa.googleapis.com
+[2022-10-25 00:21:24] Client connected with address : ('127.0.0.1', 56264)
+[2022-10-25 00:21:24] Client connected with address : ('127.0.0.1', 56265)
+[2022-10-25 00:21:25] Client connected with address : ('127.0.0.1', 56266)
+[2022-10-25 00:21:38] facebook.com added to blocklist
+[2022-10-25 00:21:41] Client connected with address : ('127.0.0.1', 56269)
+[2022-10-25 00:21:41] Client connected with address : ('127.0.0.1', 56271)
+[2022-10-25 00:21:42] Client connected with address : ('127.0.0.1', 56273)
+[2022-10-25 00:21:42] Client connected with address : ('127.0.0.1', 56277)
+[2022-10-25 00:21:42] Client connected with address : ('127.0.0.1', 56278)
+[2022-10-25 00:21:42] Client connected with address : ('127.0.0.1', 56280)
+[2022-10-25 00:21:42] Client connected with address : ('127.0.0.1', 56282)
+[2022-10-25 00:21:42] Client connected with address : ('127.0.0.1', 56283)
+[2022-10-25 00:21:42] Client connected with address : ('127.0.0.1', 56284)
+[2022-10-25 00:21:42] Connected to HTTPS Server : static.xx.fbcdn.net
+[2022-10-25 00:21:43] Client connected with address : ('127.0.0.1', 56287)
+[2022-10-25 00:21:43] Connected to HTTPS Server : scontent.xx.fbcdn.net
+[2022-10-25 00:21:43] Client connected with address : ('127.0.0.1', 56293)
+[2022-10-25 00:21:43] Connected to HTTPS Server : scontent.fkhi22-1.fna.fbcdn.net
+[2022-10-25 00:21:44] Client connected with address : ('127.0.0.1', 56299)
+[2022-10-25 00:21:44] Connected to HTTPS Server : static.xx.fbcdn.net
+[2022-10-25 00:21:44] Client connected with address : ('127.0.0.1', 56302)
+[2022-10-25 00:21:44] Connected to HTTPS Server : video.fkhi22-1.fna.fbcdn.net
+[2022-10-25 00:21:44] Client connected with address : ('127.0.0.1', 56308)
+[2022-10-25 00:21:44] Connected to HTTPS Server : scontent.fkhi22-1.fna.fbcdn.net
+[2022-10-25 00:21:44] Client connected with address : ('127.0.0.1', 56310)
+[2022-10-25 00:21:44] Connected to HTTPS Server : static.xx.fbcdn.net
+[2022-10-25 00:21:45] Client connected with address : ('127.0.0.1', 56314)
+[2022-10-25 00:21:46] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:21:46] Client connected with address : ('127.0.0.1', 56316)
+[2022-10-25 00:21:46] Connected to HTTPS Server : gateway.facebook.com
+[2022-10-25 00:21:46] Client connected with address : ('127.0.0.1', 56321)
+[2022-10-25 00:21:46] Connected to HTTPS Server : d27xxe7juh1us6.cloudfront.net
+[2022-10-25 00:21:46] Client connected with address : ('127.0.0.1', 56323)
+[2022-10-25 00:21:46] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:21:46] Client connected with address : ('127.0.0.1', 56325)
+[2022-10-25 00:21:46] Connected to HTTPS Server : d27xxe7juh1us6.cloudfront.net
+[2022-10-25 00:21:51] Client connected with address : ('127.0.0.1', 56328)
+[2022-10-25 00:21:51] Connected to HTTPS Server : gateway.facebook.com
+[2022-10-25 00:22:01] --------------------------      NEW SESSION     --------------------------------------
+[2022-10-25 00:22:01] Client connected with address : ('127.0.0.1', 56348)
+[2022-10-25 00:22:01] Client connected with address : ('127.0.0.1', 56349)
+[2022-10-25 00:22:01] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:22:01] Connected to HTTPS Server : www.facebook.com
+[2022-10-25 00:22:02] Client connected with address : ('127.0.0.1', 56345)
+[2022-10-25 00:22:02] Client connected with address : ('127.0.0.1', 56344)
+[2022-10-25 00:22:02] Client connected with address : ('127.0.0.1', 56346)
+[2022-10-25 00:22:02] Client connected with address : ('127.0.0.1', 56347)
+[2022-10-25 00:22:02] Connected to HTTPS Server : www.facebook.com
+[2022-10-25 00:22:02] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:22:02] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:22:02] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:22:02] Client connected with address : ('127.0.0.1', 56358)
+[2022-10-25 00:22:02] Connected to HTTPS Server : gateway.facebook.com
+[2022-10-25 00:22:02] Client connected with address : ('127.0.0.1', 56360)
+[2022-10-25 00:22:02] Connected to HTTPS Server : gateway.facebook.com
+[2022-10-25 00:22:04] Client connected with address : ('127.0.0.1', 56364)
+[2022-10-25 00:22:04] Connected to HTTPS Server : scontent.fkhi22-1.fna.fbcdn.net
+[2022-10-25 00:22:05] Client connected with address : ('127.0.0.1', 56367)
+[2022-10-25 00:22:05] Connected to HTTPS Server : scontent.fkhi22-1.fna.fbcdn.net
+[2022-10-25 00:22:09] Client connected with address : ('127.0.0.1', 56371)
+[2022-10-25 00:22:09] Client connected with address : ('127.0.0.1', 56372)
+[2022-10-25 00:22:09] Connected to HTTPS Server : www.gstatic.com
+[2022-10-25 00:22:09] Connected to HTTPS Server : www.google.com
+[2022-10-25 00:22:10] Client connected with address : ('127.0.0.1', 56379)
+[2022-10-25 00:22:10] Connected to HTTPS Server : clients4.google.com
+[2022-10-25 00:22:10] Client connected with address : ('127.0.0.1', 56382)
+[2022-10-25 00:22:10] Connected to HTTPS Server : aa.google.com
+[2022-10-25 00:22:10] Client connected with address : ('127.0.0.1', 56386)
+[2022-10-25 00:22:10] Client connected with address : ('127.0.0.1', 56388)
+[2022-10-25 00:22:10] Connected to HTTPS Server : clients4.google.com
+[2022-10-25 00:22:10] Client connected with address : ('127.0.0.1', 56390)
+[2022-10-25 00:22:10] Connected to HTTPS Server : adservice.google.com
+[2022-10-25 00:22:10] Connected to HTTPS Server : aa.google.com
+[2022-10-25 00:22:10] Client connected with address : ('127.0.0.1', 56393)
+[2022-10-25 00:22:10] Connected to HTTPS Server : play.google.com
+[2022-10-25 00:22:10] Client connected with address : ('127.0.0.1', 56395)
+[2022-10-25 00:22:10] Connected to HTTPS Server : adservice.google.com
+[2022-10-25 00:22:11] Client connected with address : ('127.0.0.1', 56397)
+[2022-10-25 00:22:11] Connected to HTTPS Server : play.google.com
+[2022-10-25 00:22:13] Client connected with address : ('127.0.0.1', 56401)
+[2022-10-25 00:22:13] Connected to HTTPS Server : signaler-pa.clients6.google.com
+[2022-10-25 00:22:13] Client connected with address : ('127.0.0.1', 56403)
+[2022-10-25 00:22:13] Connected to HTTPS Server : signaler-pa.clients6.google.com
+[2022-10-25 00:22:14] Client connected with address : ('127.0.0.1', 56408)
+[2022-10-25 00:22:14] Connected to HTTPS Server : signaler-pa.clients6.google.com
+[2022-10-25 00:22:14] Client connected with address : ('127.0.0.1', 56411)
+[2022-10-25 00:22:14] Client connected with address : ('127.0.0.1', 56412)
+[2022-10-25 00:22:14] Connected to HTTPS Server : signaler-pa.clients6.google.com
+[2022-10-25 00:22:14] Connected to HTTPS Server : ogs.google.com
+[2022-10-25 00:22:14] Client connected with address : ('127.0.0.1', 56415)
+[2022-10-25 00:22:14] Connected to HTTPS Server : ogs.google.com
+[2022-10-25 00:22:15] Client connected with address : ('127.0.0.1', 56418)
+[2022-10-25 00:22:15] Connected to HTTPS Server : ssl.gstatic.com
+[2022-10-25 00:22:20] Client connected with address : ('127.0.0.1', 56421)
+[2022-10-25 00:22:20] Connected to HTTPS Server : v10.events.data.microsoft.com
+[2022-10-25 00:22:27] google.com added to blocklist
+[2022-10-25 00:22:51] --------------------------      NEW SESSION     --------------------------------------
+[2022-10-25 00:22:52] Client connected with address : ('127.0.0.1', 56465)
+[2022-10-25 00:22:52] Client connected with address : ('127.0.0.1', 56466)
+[2022-10-25 00:22:52] Client connected with address : ('127.0.0.1', 56467)
+[2022-10-25 00:22:52] Client connected with address : ('127.0.0.1', 56468)
+[2022-10-25 00:22:52] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:22:52] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:22:52] Connected to HTTPS Server : gateway.facebook.com
+[2022-10-25 00:22:52] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:22:52] Client connected with address : ('127.0.0.1', 56473)
+[2022-10-25 00:22:52] Client connected with address : ('127.0.0.1', 56474)
+[2022-10-25 00:22:52] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:22:52] Connected to HTTPS Server : gateway.facebook.com
+[2022-10-25 00:22:53] Client connected with address : ('127.0.0.1', 56482)
+[2022-10-25 00:22:53] Connected to HTTPS Server : www.google.com
+[2022-10-25 00:22:53] Client connected with address : ('127.0.0.1', 56485)
+[2022-10-25 00:22:53] Connected to HTTPS Server : signaler-pa.clients6.google.com
+[2022-10-25 00:22:53] Client connected with address : ('127.0.0.1', 56488)
+[2022-10-25 00:22:53] Client connected with address : ('127.0.0.1', 56489)
+[2022-10-25 00:22:53] Connected to HTTPS Server : www.facebook.com
+[2022-10-25 00:22:53] Connected to HTTPS Server : static.xx.fbcdn.net
+[2022-10-25 00:22:53] Client connected with address : ('127.0.0.1', 56492)
+[2022-10-25 00:22:53] Connected to HTTPS Server : signaler-pa.clients6.google.com
+[2022-10-25 00:22:53] Client connected with address : ('127.0.0.1', 56494)
+[2022-10-25 00:22:53] Connected to HTTPS Server : www.google.com
+[2022-10-25 00:22:54] Client connected with address : ('127.0.0.1', 56499)
+[2022-10-25 00:22:54] Connected to HTTPS Server : signaler-pa.clients6.google.com
+[2022-10-25 00:22:54] Client connected with address : ('127.0.0.1', 56501)
+[2022-10-25 00:22:54] Connected to HTTPS Server : scontent.xx.fbcdn.net
+[2022-10-25 00:22:54] Client connected with address : ('127.0.0.1', 56503)
+[2022-10-25 00:22:54] Connected to HTTPS Server : signaler-pa.clients6.google.com
+[2022-10-25 00:22:56] Client connected with address : ('127.0.0.1', 56507)
+[2022-10-25 00:22:56] Connected to HTTPS Server : scontent.fkhi22-1.fna.fbcdn.net
+[2022-10-25 00:22:56] Client connected with address : ('127.0.0.1', 56512)
+[2022-10-25 00:22:56] Connected to HTTPS Server : scontent.fkhi22-1.fna.fbcdn.net
+[2022-10-25 00:22:56] Client connected with address : ('127.0.0.1', 56515)
+[2022-10-25 00:22:56] Connected to HTTPS Server : static.xx.fbcdn.net
+[2022-10-25 00:22:56] Client connected with address : ('127.0.0.1', 56519)
+[2022-10-25 00:22:56] Connected to HTTPS Server : video.fkhi22-1.fna.fbcdn.net
+[2022-10-25 00:22:56] Client connected with address : ('127.0.0.1', 56525)
+[2022-10-25 00:22:56] Connected to HTTPS Server : static.xx.fbcdn.net
+[2022-10-25 00:22:57] Client connected with address : ('127.0.0.1', 56528)
+[2022-10-25 00:22:57] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:23:02] Client connected with address : ('127.0.0.1', 56531)
+[2022-10-25 00:23:02] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:23:05] Client connected with address : ('127.0.0.1', 56535)
+[2022-10-25 00:23:05] Connected to HTTPS Server : safebrowsing.googleapis.com
+[2022-10-25 00:23:05] Client connected with address : ('127.0.0.1', 56537)
+[2022-10-25 00:23:05] Connected to HTTPS Server : safebrowsing.googleapis.com
+[2022-10-25 00:23:06] Client connected with address : ('127.0.0.1', 56541)
+[2022-10-25 00:23:06] Connected to HTTPS Server : d27xxe7juh1us6.cloudfront.net
+[2022-10-25 00:23:06] Client connected with address : ('127.0.0.1', 56543)
+[2022-10-25 00:23:06] Connected to HTTPS Server : d27xxe7juh1us6.cloudfront.net
+[2022-10-25 00:23:09] Client connected with address : ('127.0.0.1', 56547)
+[2022-10-25 00:23:09] Connected to HTTPS Server : femetrics.grammarly.io
+[2022-10-25 00:23:09] Client connected with address : ('127.0.0.1', 56549)
+[2022-10-25 00:23:10] Connected to HTTPS Server : femetrics.grammarly.io
+[2022-10-25 00:23:11] Client connected with address : ('127.0.0.1', 56554)
+[2022-10-25 00:23:11] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:23:11] Client connected with address : ('127.0.0.1', 56556)
+[2022-10-25 00:23:11] Connected to HTTPS Server : gateway.facebook.com
+[2022-10-25 00:23:11] Client connected with address : ('127.0.0.1', 56558)
+[2022-10-25 00:23:11] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:23:16] Client connected with address : ('127.0.0.1', 56562)
+[2022-10-25 00:23:16] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:23:24] Client connected with address : ('127.0.0.1', 56566)
+[2022-10-25 00:23:24] Connected to HTTPS Server : ssl.gstatic.com
+[2022-10-25 00:23:24] Client connected with address : ('127.0.0.1', 56568)
+[2022-10-25 00:23:24] Connected to HTTPS Server : ssl.gstatic.com
+[2022-10-25 00:23:30] Client connected with address : ('127.0.0.1', 56572)
+[2022-10-25 00:23:30] Connected to HTTPS Server : clients4.google.com
+[2022-10-25 00:23:31] Client connected with address : ('127.0.0.1', 56574)
+[2022-10-25 00:23:31] Connected to HTTPS Server : clients4.google.com
+[2022-10-25 00:23:33] Client connected with address : ('127.0.0.1', 56580)
+[2022-10-25 00:23:33] Client connected with address : ('127.0.0.1', 56581)
+[2022-10-25 00:23:34] Client connected with address : ('127.0.0.1', 56583)
+[2022-10-25 00:23:34] Connected to HTTPS Server : csp.withgoogle.com
+[2022-10-25 00:23:34] Client connected with address : ('127.0.0.1', 56585)
+[2022-10-25 00:23:34] Client connected with address : ('127.0.0.1', 56586)
+[2022-10-25 00:23:34] Connected to HTTPS Server : csp.withgoogle.com
+[2022-10-25 00:23:45] --------------------------      NEW SESSION     --------------------------------------
+[2022-10-25 00:23:45] Client connected with address : ('127.0.0.1', 56633)
+[2022-10-25 00:23:45] Connected to HTTPS Server : www.facebook.com
+[2022-10-25 00:23:45] Client connected with address : ('127.0.0.1', 56634)
+[2022-10-25 00:23:45] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:23:45] Client connected with address : ('127.0.0.1', 56642)
+[2022-10-25 00:23:45] Connected to HTTPS Server : clients4.google.com
+[2022-10-25 00:23:45] Client connected with address : ('127.0.0.1', 56636)
+[2022-10-25 00:23:45] Client connected with address : ('127.0.0.1', 56646)
+[2022-10-25 00:23:45] Connected to HTTPS Server : www.facebook.com
+[2022-10-25 00:23:45] Connected to HTTPS Server : www.google.com
+[2022-10-25 00:23:45] Client connected with address : ('127.0.0.1', 56626)
+[2022-10-25 00:23:45] Client connected with address : ('127.0.0.1', 56627)
+[2022-10-25 00:23:45] Client connected with address : ('127.0.0.1', 56628)
+[2022-10-25 00:23:45] Client connected with address : ('127.0.0.1', 56629)
+[2022-10-25 00:23:45] Client connected with address : ('127.0.0.1', 56630)
+[2022-10-25 00:23:45] Client connected with address : ('127.0.0.1', 56631)
+[2022-10-25 00:23:45] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:23:45] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:23:45] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:23:45] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:23:45] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:23:45] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:23:45] Client connected with address : ('127.0.0.1', 56638)
+[2022-10-25 00:23:45] Connected to HTTPS Server : clients4.google.com
+[2022-10-25 00:23:45] Client connected with address : ('127.0.0.1', 56656)
+[2022-10-25 00:23:46] Connected to HTTPS Server : www.google.com
+[2022-10-25 00:23:46] Client connected with address : ('127.0.0.1', 56661)
+[2022-10-25 00:23:46] Connected to HTTPS Server : gateway.facebook.com
+[2022-10-25 00:23:46] Client connected with address : ('127.0.0.1', 56663)
+[2022-10-25 00:23:46] Connected to HTTPS Server : gateway.facebook.com
+[2022-10-25 00:23:46] Client connected with address : ('127.0.0.1', 56665)
+[2022-10-25 00:23:46] Connected to HTTPS Server : gateway.facebook.com
+[2022-10-25 00:23:47] Client connected with address : ('127.0.0.1', 56670)
+[2022-10-25 00:23:47] Connected to HTTPS Server : scontent.fkhi22-1.fna.fbcdn.net
+[2022-10-25 00:23:48] Client connected with address : ('127.0.0.1', 56674)
+[2022-10-25 00:23:48] Connected to HTTPS Server : scontent.fkhi22-1.fna.fbcdn.net
+[2022-10-25 00:23:48] Client connected with address : ('127.0.0.1', 56681)
+[2022-10-25 00:23:48] Client connected with address : ('127.0.0.1', 56682)
+[2022-10-25 00:23:48] Client connected with address : ('127.0.0.1', 56683)
+[2022-10-25 00:23:48] Connected to HTTPS Server : classroom.google.com
+[2022-10-25 00:23:48] Client connected with address : ('127.0.0.1', 56685)
+[2022-10-25 00:23:48] Client connected with address : ('127.0.0.1', 56686)
+[2022-10-25 00:23:48] Connected to HTTPS Server : classroom.google.com
+[2022-10-25 00:23:51] Client connected with address : ('127.0.0.1', 56690)
+[2022-10-25 00:23:51] Connected to HTTPS Server : signaler-pa.clients6.google.com
+[2022-10-25 00:23:51] Client connected with address : ('127.0.0.1', 56692)
+[2022-10-25 00:23:51] Connected to HTTPS Server : signaler-pa.clients6.google.com
+[2022-10-25 00:23:52] Client connected with address : ('127.0.0.1', 56696)
+[2022-10-25 00:23:52] Connected to HTTPS Server : signaler-pa.clients6.google.com
+[2022-10-25 00:23:52] Client connected with address : ('127.0.0.1', 56698)
+[2022-10-25 00:23:52] Connected to HTTPS Server : signaler-pa.clients6.google.com
+[2022-10-25 00:23:53] Client connected with address : ('127.0.0.1', 56703)
+[2022-10-25 00:23:53] Client connected with address : ('127.0.0.1', 56704)
+[2022-10-25 00:23:53] Client connected with address : ('127.0.0.1', 56705)
+[2022-10-25 00:24:10] Client connected with address : ('127.0.0.1', 56711)
+[2022-10-25 00:24:11] Connected to HTTPS Server : v20.events.data.microsoft.com
+[2022-10-25 00:24:11] Client connected with address : ('127.0.0.1', 56715)
+[2022-10-25 00:24:11] Client connected with address : ('127.0.0.1', 56716)
+[2022-10-25 00:24:15] Client connected with address : ('127.0.0.1', 56718)
+[2022-10-25 00:24:19] Client connected with address : ('127.0.0.1', 56721)
+[2022-10-25 00:24:19] Connected to HTTPS Server : encrypted-tbn0.gstatic.com
+[2022-10-25 00:24:19] Client connected with address : ('127.0.0.1', 56729)
+[2022-10-25 00:24:19] Client connected with address : ('127.0.0.1', 56730)
+[2022-10-25 00:24:19] Connected to HTTPS Server : encrypted-tbn0.gstatic.com
+[2022-10-25 00:24:19] Client connected with address : ('127.0.0.1', 56732)
+[2022-10-25 00:24:20] Client connected with address : ('127.0.0.1', 56734)
+[2022-10-25 00:24:20] Connected to HTTPS Server : static.xx.fbcdn.net
+[2022-10-25 00:24:20] Client connected with address : ('127.0.0.1', 56737)
+[2022-10-25 00:24:21] Connected to HTTPS Server : scontent.xx.fbcdn.net
+[2022-10-25 00:24:21] Client connected with address : ('127.0.0.1', 56741)
+[2022-10-25 00:24:21] Connected to HTTPS Server : static.xx.fbcdn.net
+[2022-10-25 00:24:22] Client connected with address : ('127.0.0.1', 56744)
+[2022-10-25 00:24:22] Connected to HTTPS Server : static.xx.fbcdn.net
+[2022-10-25 00:24:24] Client connected with address : ('127.0.0.1', 56748)
+[2022-10-25 00:24:24] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:24:29] Client connected with address : ('127.0.0.1', 56751)
+[2022-10-25 00:24:29] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:24:30] facebook.com added to blocklist
+[2022-10-25 00:24:41] facebook.com deleted from the blocklist
+[2022-10-25 00:24:44] Client connected with address : ('127.0.0.1', 56755)
+[2022-10-25 00:24:44] Connected to HTTPS Server : video.fkhi22-1.fna.fbcdn.net
+[2022-10-25 00:24:44] Client connected with address : ('127.0.0.1', 56760)
+[2022-10-25 00:24:44] Connected to HTTPS Server : video.fkhi22-1.fna.fbcdn.net
+[2022-10-25 00:24:45] Client connected with address : ('127.0.0.1', 56767)
+[2022-10-25 00:24:45] Connected to HTTPS Server : scontent.fkhi22-1.fna.fbcdn.net
+[2022-10-25 00:24:45] Client connected with address : ('127.0.0.1', 56769)
+[2022-10-25 00:24:45] Connected to HTTPS Server : scontent.fkhi22-1.fna.fbcdn.net
+[2022-10-25 00:24:51] Client connected with address : ('127.0.0.1', 56772)
+[2022-10-25 00:24:51] Connected to HTTPS Server : gateway.facebook.com
+[2022-10-25 00:24:52] Client connected with address : ('127.0.0.1', 56776)
+[2022-10-25 00:24:52] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:24:52] Client connected with address : ('127.0.0.1', 56778)
+[2022-10-25 00:24:52] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 00:24:57] Client connected with address : ('127.0.0.1', 56781)
+[2022-10-25 00:24:57] Connected to HTTPS Server : edge-chat.facebook.com
+[2022-10-25 01:20:57] --------------------------      NEW SESSION     --------------------------------------
+[2022-10-25 01:21:32] Client connected with address : ('127.0.0.1', 58611)
+[2022-10-25 01:21:32] Client connected with address : ('127.0.0.1', 58612)
+[2022-10-25 01:21:32] Connected to HTTPS Server : github.com
+[2022-10-25 01:21:32] Connected to HTTPS Server : github.githubassets.com
+[2022-10-25 01:21:34] Client connected with address : ('127.0.0.1', 58617)
+[2022-10-25 01:21:34] Client connected with address : ('127.0.0.1', 58618)
+[2022-10-25 01:21:34] Connected to HTTPS Server : github.githubassets.com
+[2022-10-25 01:21:34] Connected to HTTPS Server : avatars.githubusercontent.com
+[2022-10-25 01:21:35] Client connected with address : ('127.0.0.1', 58625)
+[2022-10-25 01:21:35] Client connected with address : ('127.0.0.1', 58626)
+[2022-10-25 01:21:35] Connected to HTTPS Server : api.github.com
+[2022-10-25 01:21:35] Connected to HTTPS Server : collector.github.com
+[2022-10-25 01:21:35] Client connected with address : ('127.0.0.1', 58629)
+[2022-10-25 01:21:35] Client connected with address : ('127.0.0.1', 58631)
+[2022-10-25 01:21:35] Connected to HTTPS Server : api.github.com
+[2022-10-25 01:21:35] Connected to HTTPS Server : collector.github.com

@@ -12,6 +12,8 @@ max_connections = 5
 BUFFER_SIZE = 1048576
 CACHE_DIR = "./cache"
 NO_OF_OCC_FOR_CACHE = 2
+context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+black_listed = []
 
 def parse(conn):
         req = conn.recv(BUFFER_SIZE)
@@ -38,38 +40,53 @@ def parse(conn):
                         req_port = 80
                     elif(method == b'CONNECT'):
                         req_port=443
-                print(method)
-                print(url_str)
-                print(req_port)
-                if method == b'GET':
-                    proxy(url_str, req_port, conn, req)
-                elif method ==b'CONNECT':
-                    https_proxy(url_str, req_port, conn,req)
+                print("Method: ", method)
+                print("URL: ", url_str)
+                print("Port: ", req_port)
+                if url_str.decode() in black_listed:
+                    print("Blacklisted Website...")
+                    return
+                else:
+                    if method == b'GET':
+                        proxy(url_str, req_port, conn, req)
+                    elif method ==b'CONNECT':
+                        https_proxy(url_str, req_port, conn,req)
 
 def https_proxy(webserver, port, conn, req):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try: 
+        s = context.wrap_socket(s, server_side=True, do_handshake_on_connect=False)
+        if s:
+            raise Exception('')
+        s.do_handshake()
+    except:
+        s.close()
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     filename=webserver
     webserver=webserver.split(b'/')
     webserver=webserver[0]
-    os.chdir('/home/asshber/CN-Assignments/A2_Proxy/cache')
+    os.chdir(r'C:\Users\hp\CN-Assignments\A2_Proxy\cache')
     s.connect((webserver, int(port)))
     #Connect ka reply bhejna hy yaha client ko
-    s = ssl.wrap_socket(s, keyfile=None, certfile=None, server_side=False, cert_reqs=ssl.CERT_NONE, ssl_version=ssl.PROTOCOL_SSLv23)
+
     filename=str(filename)
     filename=filename.replace('/','')
-    string=bytes(f"GET / HTTP/1.1\r\nHost: {webserver}\r\n\r\n",encoding="utf-8")
-    s.sendall(string)
+    conn.sendall(b'HTTP/1.1 200 Connection Estabilished\r\n\r\n')
+    # string=bytes(f"GET / HTTP/1.1\r\nHost: {webserver}\r\n\r\n",encoding="utf-8")
+    # s.sendall(string)
     while True:
         try:
             request = conn.recv(BUFFER_SIZE)
-            s.sendall(request)
-            print("request: ", request)
+            if (request != b''):
+                s.sendall(request)
+                print("request: ", request)
         except error as e:
             pass
         try:
             response = s.recv(BUFFER_SIZE)
-            conn.sendall(response)
-            print("response: ", response)
+            if (response != b''):
+                conn.sendall(response)
+                print("response: ", response)
         except error as e:
             pass
     s.close()
@@ -128,7 +145,11 @@ if __name__== "__main__":
 
     port=int(arg.p)
 
-    print(port)
+
+    with open('blacklisted.txt', 'r') as file:
+        for line in file:
+            black_listed.append(line.rstrip())
+    print(black_listed)
 
     if not os.path.isdir(CACHE_DIR):
         os.makedirs(CACHE_DIR)  #All the cached file will go here
