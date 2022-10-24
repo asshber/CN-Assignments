@@ -9,7 +9,7 @@ import ssl
 
 
 max_connections = 5
-BUFFER_SIZE = 4096
+BUFFER_SIZE = 1048576
 CACHE_DIR = "./cache"
 NO_OF_OCC_FOR_CACHE = 2
 
@@ -47,7 +47,6 @@ def parse(conn):
                     https_proxy(url_str, req_port, conn,req)
 
 def https_proxy(webserver, port, conn, req):
-    #print(req)
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     filename=webserver
     webserver=webserver.split(b'/')
@@ -61,16 +60,24 @@ def https_proxy(webserver, port, conn, req):
     string=bytes(f"GET / HTTP/1.1\r\nHost: {webserver}\r\n\r\n",encoding="utf-8")
     s.sendall(string)
     while True:
-        new = s.recv(4096)
-        if not new:
-            s.close()
-            break
-        print(new)
-        conn.send(new)  
+        try:
+            request = conn.recv(BUFFER_SIZE)
+            s.sendall(request)
+            print("request: ", request)
+        except error as e:
+            pass
+        try:
+            response = s.recv(BUFFER_SIZE)
+            conn.sendall(response)
+            print("response: ", response)
+        except error as e:
+            pass
+    s.close()
 
 def initialize_proxy():
     p_socket=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-    p_socket.bind(('127.0.0.1',port))
+    p_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    p_socket.bind(('', port))
     p_socket.listen(max_connections)
     print("Listening...")
 
@@ -80,37 +87,7 @@ def initialize_proxy():
         #t1=threading.Thread(target=parse,args=(conn))
         print("Connection Request from: " + str(addr[0]) + ", port: " + str(addr[1]))
         start_new_thread(parse, (conn,))
-        #t1.start()
-        #New fun will be from here threading will also be applied when calling
-        # req = conn.recv(BUFFER_SIZE)
-        # #print(req)
-        # arr=req.split(b'\n')
-        # #print(arr)
-        # for i in range(0,len(arr)-2):
-        #     if (i==0):
-        #         method_url=arr[i].split(b' ')
-        #         method=method_url[0]
-        #         url=method_url[1].split(b'://')
-        #         #print(url)
-        #         url_str=url[0]
-        #         if url_str == b'http':
-        #             url_str=url[1]
-        #         if b':' in url_str:
-        #             req_port=url_str.split(b':')
-        #             url_str=req_port[0]
-        #             req_port=req_port[1]
-        #         else:
-        #             if(method==b'GET'):
-        #                 # print(url_str)
-        #                 # http_proxy(url_str, 80, conn, req)
-        #                 req_port = 80
-        #             elif(method == b'CONNECT'):
-        #                 req_port=443
-        #         print(method)
-        #         print(url_str)
-        #         print(req_port)
-        #         proxy(url_str, req_port, conn, req)
-            
+        
 def proxy(webserver, port, conn, req):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     filename=webserver
