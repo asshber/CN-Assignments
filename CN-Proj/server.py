@@ -12,5 +12,5 @@ if __name__=="__main__":
     handler = http.server.SimpleHTTPRequestHandler
     with socketserver.TCPServer(("", PORT), handler) as httpd:
         httpd.allow_reuse_address=True
-        print("Server started at localhost:" + str(PORT))
+        #print("Server started at localhost:" + str(PORT))
         httpd.serve_forever()
