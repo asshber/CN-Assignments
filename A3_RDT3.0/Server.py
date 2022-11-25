@@ -5,21 +5,19 @@ import sys
 import hashlib
 import random
 import time
-#reciever
+
 UDP_IP = '127.0.0.1'
 UDP_PORT = 5005
-# create the socket 
+
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.bind((UDP_IP, UDP_PORT))
 
 responseSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 print("SERVER ACTIVE -- LISTENING FOR INCOMING CONNECTIONS\n")
-# set unpacker
 unpacker = struct.Struct("I I 8s 32s")
-# UDP_Data1 = struct.Struct('I I') #converts binary string to original form back
 UDP_Data2 = struct.Struct('I I 32s')
-#introduce server side delays and losses.
+
 def Network_Delay():
     if True and random.choice([0,1,0]) == 1: 
        time.sleep(.01)
@@ -31,7 +29,7 @@ def Network_Loss():
     if True and random.choice([0,1,1,0]) == 1: 
         print("Packet Lost")
         return(1)
-    else:
+    else:   
         return(0)
 
 
@@ -42,7 +40,6 @@ def Packet_Checksum_Corrupter(packetdata):
     else:
         return (packetdata)
 
-#keep listening for incoming connections
 while True:
 
     print("---------------------------------------------------------------")
@@ -52,12 +49,10 @@ while True:
 
     UDP_Packet = unpacker.unpack(data)
 
-    # print packet data
     print("Received packet data from client")
     print(UDP_Packet[0], UDP_Packet[1], UDP_Packet[2], UDP_Packet[3])
     SEQ=UDP_Packet[1]
 
-    # create checksum for comparison
     values = (UDP_Packet[0], UDP_Packet[1], Packet_Checksum_Corrupter(UDP_Packet[2]))
     packer = struct.Struct('I I 8s')
     packed_data = packer.pack(*values)
@@ -70,16 +65,13 @@ while True:
         else:
             SEQ = 1
 
-        # create checksum
         values = (UDP_Packet[0], SEQ)
         chkSumStruct = struct.Struct('I I')
         chkSumData = chkSumStruct.pack(*values)
         chkSum = bytes(hashlib.md5(chkSumData).hexdigest(), encoding="UTF-8")
 
-        # create response packet
         responseVal = (UDP_Packet[0], SEQ, chkSum)
         UDP_Packet = UDP_Data2.pack(*responseVal)
-        #method to randomly delay the server response
         Network_Delay()
         if(Network_Loss()):
             continue
@@ -93,13 +85,11 @@ while True:
         else:
             ACK = 1
 
-        # create checksum
         values = (ACK, SEQ)
         chkSumStruct = struct.Struct('I I')
         chkSumData = chkSumStruct.pack(*values)
         chkSum = bytes(hashlib.md5(chkSumData).hexdigest(), encoding="UTF-8")
 
-        # # create response packet
         responseVal = (ACK, SEQ, chkSum)
         UDP_Packet = UDP_Data2.pack(*responseVal)
         Network_Delay()
