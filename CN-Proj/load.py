@@ -27,15 +27,14 @@ def loadBalance():
         else:
             continue
     x[2]+=1
-    print("Hello")
     file.write(f"{x} is chosen from {server_list}\n")
     file.flush()
     return x
 
 def sendToServer(conn, serverSock):
     ssock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    print('Server-Side Socket: ', ssock.getsockname())
     ssock.connect((serverSock[0], serverSock[1]))
+    print('Server-Side Socket: ', ssock.getsockname())
     print('Server Connected: ', serverSock)
     data=conn.recv(BUFFER_SIZE)
     ssock.send(data)
@@ -44,9 +43,15 @@ def sendToServer(conn, serverSock):
         data=ssock.recv(BUFFER_SIZE)
         if data:
             conn.send(data)
+            data = ""
         else:
             break
-    serverSock[2]-=1
+    sleep(random.randint(10, 25))
+    for i in server_list:
+        if i == serverSock:
+            i[2] -= 1
+        
+    file.flush()
     conn.close()
     ssock.close()
 
