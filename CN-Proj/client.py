@@ -1,6 +1,13 @@
-import socket
+import requests
+import threading
+from time import sleep
 
-sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server = (('localhost', 6000))
-sock.connect(server)
-sock.send(b"")
+def req():
+    url     = 'http://localhost:6000'
+    payload = { 'key' : 'val' }
+    headers = {}
+    res = requests.get(url, data=payload, headers=headers)
+
+for i in range(30):
+    threading.Thread(target = req).start()
+    sleep(2)

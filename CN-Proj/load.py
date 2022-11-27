@@ -12,28 +12,22 @@ from random import randint
 BUFFER_SIZE = 4096
 MAX_CONNECTIONS = 15
 
-threads = []
 server_list = []
-client_threads=[]
+server_conn = []
 global file
-file=open('log.txt','w')
+file = open('log.txt','w')
 
 def loadBalance():
-    min=999999
-    for i in server_list:
-        if i[2]<min:
-            x=i
-            min=i[2]
-        else:
-            continue
-    x[2]+=1
-    file.write(f"{x} is chosen from {server_list}\n")
+
+    min_index = server_conn.index(min(server_conn))
+    file.write(f"{server_list[min_index]} is chosen, active connections: {server_conn}\n")
     file.flush()
-    return x
+    server_conn[min_index] += 1
+    return server_list[min_index]
 
 def sendToServer(conn, serverSock):
     ssock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    ssock.connect((serverSock[0], serverSock[1]))
+    ssock.connect((serverSock))
     print('Server-Side Socket: ', ssock.getsockname())
     print('Server Connected: ', serverSock)
     data=conn.recv(BUFFER_SIZE)
@@ -47,9 +41,7 @@ def sendToServer(conn, serverSock):
         else:
             break
     sleep(random.randint(10, 25))
-    for i in server_list:
-        if i == serverSock:
-            i[2] -= 1
+    server_conn[server_list.index(serverSock)] -=1
         
     file.flush()
     conn.close()
@@ -68,7 +60,6 @@ def accept_conn(clientSideSocket):
         try:
             conn, addr = clientSideSocket.accept()
             thread=threading.Thread(target=sendToServer,args=(conn,loadBalance()))
-            client_threads.append(thread)
             thread.start()
         except:
             exit()
@@ -78,11 +69,14 @@ def serverThread(port):
 def startApplicationServers(startPort, endPort):
     i = startPort
     while i <= endPort:
-        server_list.append(['localhost', i, 0])
+        server_list.append(('localhost', i))
+        server_conn.append(0)
         thread = threading.Thread(target = serverThread, args = (i,))
-        threads.append(thread)
         thread.start()
         i = i + 1
+    if len(server_list) == len(server_conn):
+        print(server_list)
+        print(server_conn)
 
 
 startApplicationServers(int(sys.argv[1]), int(sys.argv[2]))
